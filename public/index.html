@@ -4,12 +4,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/remixicon/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../src/css/output.css">
     <title>Home - Real Homes</title>
 </head>
 
-<body>
+<body class="font-roboto">
+    <header class="container py-4 px-30 mx-auto text-head-font">
+        <nav class="flex items-center justify-between"> <!--  -->
+            <div class="flex gap-26">
+                <div class="flex items-center justify-self-start col-xl">
+                    <img src="https://bunny-wp-pullzone-o856rmsjyp.b-cdn.net/wp-content/uploads/sites/13/2024/08/logo-fusion.svg"
+                        alt="">
+                </div>
+                <div class="flex justify-start items-center">
+                    <ul class="flex flex-row gap-10 justify-start">
+                        <li><a href="#"
+                                class="text-black font-semibold text-xl duration-300 hover:text-primary">Home</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-black font-semibold text-xl duration-300 hover:text-primary">Properties</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-black font-semibold text-xl duration-300 hover:text-primary">Pages</a>
+                        </li>
+                        <li><a href="#"
+                                class="text-black font-semibold text-xl duration-300 hover:text-primary">Blog</a>
+                        </li>
+                        <li><a href="#" class="text-black font-semibold text-xl duration-300 hover:text-primary">Contact
+                                us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex gap-4 item">
+                <button
+                    class="bg-primary text-white px-6 p-2 h-max border border-primary rounded-xl duration-300 hover:bg-white hover:text-primary"><i
+                        class="ri-phone-fill"></i> Book a
+                    Tour</button>
+                <button
+                    class="bg-white text-primary px-6 p-2 h-max border border-primary rounded-xl duration-300 hover:bg-primary hover:text-white">Sign
+                    In</button>
+            </div>
+        </nav>
+    </header>
+    <main class="container py-5 px-30 mx-auto">
+        <section id="banner" class="my-8">
+            <div class="flex flex-row gap-2 justify-between items-center relative z-10">
+                <div class="flex flex-col gap-16">
+                    <div>
+                        <h2 class="text-[42px] text-black font-lora font-medium">Exploring Unique</h2>
+                        <h1 class="text-[56px] text-primary font-lora font-semibold">Homes In Market</h1>
+                    </div>
+                    <div id="search-bar" class="w-fit">
+                        <div
+                            class=" w-fit flex flex-row items-center gap-0 rounded-t-lg shadow-[0px_-10px_35px_10px_rgba(0,_0,_0,_0.1)] z-2">
+                            <div
+                                class="inline text-lg px-4 py-3 bg-gray-100 shadow-xs shadow-gray-50 rounded-tl-lg duration-200 hover:bg-gray-200">
+                                All</div>
+                            <div
+                                class="inline text-lg px-4 py-3 bg-gray-100 shadow-xs shadow-gray-50 duration-200 hover:bg-gray-200">
+                                For Rent</div>
+                            <div
+                                class="inline text-lg px-4 py-3 bg-gray-100 shadow-xs shadow-gray-50 duration-200 rounded-tr-lg hover:bg-gray-200">
+                                For Sale
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-row gap-2 items-center rounded-b-lg rounded-r-lg shadow-[0px_-10px_35px_10px_rgba(0,_0,_0,_0.1)] z-1">
+                            <div class="p-5 bg-white border border-none rounded-b-lg rounded-r-lg ">
+                                <input type="text" placeholder="Enter an address, neighboorhood, city, or ZIP code"
+                                    class="w-xl outline-none p-3 bg-gray-100 border border-none rounded-b-lg rounded-r-lg">
+                            </div>
+                            <i class="ri-equalizer-line text-primary text-lg"></i>
+                            <p><a href="#" class="text-primary text-lg font-semibold  pr-3">Search</a></p>
+                        </div>
+                    </div>
+                    <div id="quality" class="flex flex-row gap-10 items-center">
+                        <div class="flex flex-col gap-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="85" viewBox="0 0 80 85"
+                                fill="none">
+                                <path
+                                    d="M61.1059 0C50.6696 0 42.2222 8.45771 42.2222 18.894C42.2222 29.3303 50.6799 37.7778 61.1059 37.7778C71.532 37.7778 79.9999 29.3201 79.9999 18.894C79.9999 8.46796 71.5422 0 61.1059 0Z"
+                                    fill="#BD9DFF"></path>
+                                <circle cx="4.18388" cy="14.5683" r="2.39347"
+                                    transform="rotate(32.0494 4.18388 14.5683)" fill="#BD9DFF"></circle>
+                                <circle cx="10.8804" cy="16.4949" r="1.43608"
+                                    transform="rotate(32.0494 10.8804 16.4949)" fill="#BD9DFF"></circle>
+                                <path d="M22.2222 48.3469L31.0789 56.6684L49.9999 38.8906" stroke="#383838"
+                                    stroke-width="3" stroke-linecap="round"></path>
+                                <path
+                                    d="M33.5271 13.6446C35.078 12.5568 37.1442 12.5568 38.6951 13.6446L40.9969 15.259C42.5063 16.3178 44.3529 16.7834 46.1839 16.567L48.9444 16.2407C50.8054 16.0207 52.608 16.9772 53.4692 18.6416L54.8712 21.3509C55.7001 22.9529 57.0786 24.2025 58.7541 24.8707L61.5231 25.9749C63.224 26.6532 64.3443 28.2946 64.3561 30.1257L64.3773 33.4107C64.3887 35.1707 65.0187 36.8707 66.157 38.213L68.2509 40.6822C69.4171 42.0574 69.6498 43.996 68.8422 45.6082L67.3576 48.5717C66.5741 50.1356 66.3619 51.9241 66.7577 53.6279L67.5115 56.8734C67.9218 58.6396 67.2319 60.4794 65.7616 61.5405L63.2337 63.3649C61.7906 64.4063 60.7649 65.9269 60.3398 67.6551L59.5793 70.7467C59.1366 72.5462 57.6361 73.8903 55.799 74.133L52.9646 74.5076C51.1534 74.7469 49.4918 75.6391 48.2917 77.0167L46.3765 79.2154C45.1358 80.6398 43.1375 81.1376 41.3735 80.4619L38.7941 79.4737C37.0667 78.812 35.1556 78.812 33.4281 79.4737L30.8487 80.4619C29.0847 81.1376 27.0865 80.6398 25.8457 79.2154L23.9305 77.0167C22.7305 75.6391 21.0689 74.7469 19.2576 74.5076L16.4232 74.133C14.5861 73.8903 13.0856 72.5462 12.643 70.7467L11.8824 67.655C11.4574 65.9269 10.4316 64.4063 8.98853 63.3649L6.46061 61.5405C4.9903 60.4794 4.30045 58.6396 4.71069 56.8734L5.46455 53.6279C5.8603 51.9241 5.6481 50.1356 4.86466 48.5717L3.38005 45.6082C2.57242 43.996 2.80511 42.0574 3.97133 40.6822L6.06521 38.213C7.20354 36.8707 7.83352 35.1707 7.8449 33.4107L7.86612 30.1257C7.87796 28.2946 8.99821 26.6532 10.6991 25.9749L13.4682 24.8707C15.1436 24.2025 16.5221 22.9529 17.3511 21.3509L18.753 18.6416C19.6142 16.9772 21.4168 16.0207 23.2779 16.2407L26.0383 16.567C27.8693 16.7834 29.7159 16.3178 31.2254 15.259L33.5271 13.6446L32.6657 12.4166L33.5271 13.6446Z"
+                                    stroke="#383838" stroke-width="3"></path>
+                            </svg>
+                            <p class="text-[24px] font-bold text-black font-raleway">40,525+</p>
+                            <p>Premium Properties</p>
+                        </div>
+                        <div class="flex flex-col gap-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="83" height="76" viewBox="0 0 83 76"
+                                fill="none">
+                                <path
+                                    d="M19.4947 4C8.72076 4 0 12.9552 0 24.0054C0 35.0556 8.73134 44 19.4947 44C30.2581 44 39 35.0448 39 24.0054C39 12.9661 30.2687 4 19.4947 4Z"
+                                    fill="#BD9DFF"></path>
+                                <circle cx="79.5213" cy="2.98537" r="2.45058"
+                                    transform="rotate(165.534 79.5213 2.98537)" fill="#BD9DFF"></circle>
+                                <circle cx="73.3701" cy="6.59981" r="1.47035"
+                                    transform="rotate(165.534 73.3701 6.59981)" fill="#BD9DFF"></circle>
+                                <circle cx="44.5" cy="40.5" r="34" stroke="#383838" stroke-width="3"></circle>
+                                <path d="M59 53C55.1544 56.2014 49.9386 58 44.5 58C39.0614 58 33.8456 56.2014 30 53"
+                                    stroke="#383838" stroke-width="3" stroke-linecap="round"></path>
+                                <path
+                                    d="M32.5 35.5C35.0362 35.5 37.5 33.6939 37.5 31C37.5 28.3061 35.0362 26.5 32.5 26.5C29.9638 26.5 27.5 28.3061 27.5 31C27.5 33.6939 29.9638 35.5 32.5 35.5Z"
+                                    stroke="#383838" stroke-width="3"></path>
+                                <path
+                                    d="M58 35.5C59.3977 35.5 60.7209 35.077 61.7284 34.3213C62.7364 33.5653 63.5 32.4064 63.5 31C63.5 29.5936 62.7364 28.4347 61.7284 27.6787C60.7209 26.923 59.3977 26.5 58 26.5C56.6023 26.5 55.2791 26.923 54.2716 27.6787C53.2636 28.4347 52.5 29.5936 52.5 31C52.5 32.4064 53.2636 33.5653 54.2716 34.3213C55.2791 35.077 56.6023 35.5 58 35.5Z"
+                                    stroke="#383838" stroke-width="3"></path>
+                            </svg>
+                            <p class="text-[24px] font-bold text-black font-raleway">35,000+</p>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="flex flex-col gap-0.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="103" height="81" viewBox="0 0 103 81"
+                                fill="none">
+                                <path
+                                    d="M83.4947 42.5625C72.7208 42.5625 64 51.07 64 61.5677C64 72.0653 72.7313 80.5625 83.4947 80.5625C94.2581 80.5625 103 72.055 103 61.5677C103 51.0803 94.2687 42.5625 83.4947 42.5625Z"
+                                    fill="#BD9DFF"></path>
+                                <circle cx="77.1863" cy="2.98344" r="2.44783"
+                                    transform="rotate(165.534 77.1863 2.98344)" fill="#383838"></circle>
+                                <circle cx="71.0415" cy="6.59319" r="1.4687" transform="rotate(165.534 71.0415 6.59319)"
+                                    fill="#383838"></circle>
+                                <rect x="1.5" y="15.0625" width="78" height="59" rx="5.43956" stroke="#383838"
+                                    stroke-width="3"></rect>
+                                <rect x="1.5" y="15.0625" width="78" height="21" rx="5.43956" stroke="#383838"
+                                    stroke-width="3"></rect>
+                                <mask id="path-6-inside-1_6003_6359" fill="white">
+                                    <rect x="33" y="27.5625" width="17" height="16" rx="2.04105"></rect>
+                                </mask>
+                                <rect x="33" y="27.5625" width="17" height="16" rx="2.04105" fill="white"
+                                    stroke="#383838" stroke-width="6" mask="url(#path-6-inside-1_6003_6359)"></rect>
+                                <path
+                                    d="M28 13.5625V7.60355C28 6.47631 28.9138 5.5625 30.041 5.5625H51.959C53.0862 5.5625 54 6.47631 54 7.60355V13.5625"
+                                    stroke="#383838" stroke-width="3"></path>
+                            </svg>
+                            <p class="text-[24px] font-bold text-black font-raleway">12,500+</p>
+                            <p>In Business</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row justify-end w-100 border relative z-[-2]">
+                    <!-- Slider main container -->
+                    <div class="swiper w-[630px] h-[554px]">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG91c2V8ZW58MHx8MHx8fDA%3D"
+                                    alt="" class="object-cover w-[630px] h-[554px]">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="" class="object-cover w-[630px] h-[554px]">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="" class="object-cover w-[630px] h-[554px]">
+                            </div>
+                            ...
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
 
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container py-5 px-30 mx-auto"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../src/js/app.js"></script>
 </body>
 
 </html>
