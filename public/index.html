@@ -7,19 +7,20 @@
     <link rel="stylesheet" href="../node_modules/remixicon/fonts/remixicon.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../src/css/output.css">
+    <link rel="shortcut icon" href="../src/assets/logo-main.png" type="image/x-icon">
     <title>Home - Real Homes</title>
 </head>
 
 <body class="font-roboto">
     <header class="container py-4 px-30 mx-auto text-head-font">
-        <nav class="flex items-center justify-between"> <!--  -->
+        <nav class="flex items-center justify-between">
             <div class="flex gap-26">
                 <div class="flex items-center justify-self-start col-xl">
                     <img src="https://bunny-wp-pullzone-o856rmsjyp.b-cdn.net/wp-content/uploads/sites/13/2024/08/logo-fusion.svg"
                         alt="">
                 </div>
                 <div class="flex justify-start items-center">
-                    <ul class="flex flex-row gap-10 justify-start">
+                    <ul class="flex flex-row gap-14 justify-start">
                         <li><a href="#"
                                 class="text-black font-semibold text-xl duration-300 hover:text-primary">Home</a>
                         </li>
@@ -48,17 +49,17 @@
             </div>
         </nav>
     </header>
-    <main class="container py-5 px-30 mx-auto">
-        <section id="banner" class="my-8">
+    <main>
+        <section id="banner" class="container py-4 px-30 mx-auto mt-20">
             <div class="flex flex-row gap-2 justify-between items-center relative z-10">
-                <div class="flex flex-col gap-16">
-                    <div>
-                        <h2 class="text-[42px] text-black font-lora font-medium">Exploring Unique</h2>
-                        <h1 class="text-[56px] text-primary font-lora font-semibold">Homes In Market</h1>
+                <div id="banner-part" class="flex flex-col gap-16 relative z-20">
+                    <div id="headings">
+                        <h2 class="text-[42px] text-black font-lora font-normal">Exploring Unique</h2>
+                        <h1 class="text-[64px] text-primary font-lora font-semibold">Homes In Market</h1>
                     </div>
                     <div id="search-bar" class="w-fit">
                         <div
-                            class=" w-fit flex flex-row items-center gap-0 rounded-t-lg shadow-[0px_-10px_35px_10px_rgba(0,_0,_0,_0.1)] z-2">
+                            class=" w-fit flex flex-row items-center gap-0 rounded-t-lg shadow-[0px_-10px_35px_10px_rgba(0,_0,_0,_0.1)] z-12">
                             <div
                                 class="inline text-lg px-4 py-3 bg-gray-100 shadow-xs shadow-gray-50 rounded-tl-lg duration-200 hover:bg-gray-200">
                                 All</div>
@@ -71,13 +72,13 @@
                             </div>
                         </div>
                         <div
-                            class="flex flex-row gap-2 items-center rounded-b-lg rounded-r-lg shadow-[0px_-10px_35px_10px_rgba(0,_0,_0,_0.1)] z-1">
-                            <div class="p-5 bg-white border border-none rounded-b-lg rounded-r-lg ">
+                            class="flex flex-row gap-2 items-center rounded-b-lg rounded-r-lg shadow-[0px_-10px_35px_10px_rgba(0,_0,_0,_0.1)] z-10 bg-white">
+                            <div class="p-5 bg-white border border-none rounded-b-lg rounded-r-lg z-10">
                                 <input type="text" placeholder="Enter an address, neighboorhood, city, or ZIP code"
                                     class="w-xl outline-none p-3 bg-gray-100 border border-none rounded-b-lg rounded-r-lg">
                             </div>
                             <i class="ri-equalizer-line text-primary text-lg"></i>
-                            <p><a href="#" class="text-primary text-lg font-semibold  pr-3">Search</a></p>
+                            <p><a href="#" class="text-primary text-lg font-medium  pr-4 z-10">Search</a></p>
                         </div>
                     </div>
                     <div id="quality" class="flex flex-row gap-10 items-center">
@@ -151,35 +152,318 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-row justify-end w-100 border relative z-[-2]">
-                    <!-- Slider main container -->
-                    <div class="swiper w-[630px] h-[554px]">
+                <div id="swiper" class="flex flex-row justify-end absolute right-0 z-[-3]">
+                    <div class="swiper w-[660px] h-[550px] flex z-[-3]">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide">
-                                <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG91c2V8ZW58MHx8MHx8fDA%3D"
-                                    alt="" class="object-cover w-[630px] h-[554px]">
+                            <div
+                                class="swiper-slide w-[630px] h-[554px] object-cover flex z-[-3] rounded-lg justify-center">
+                                <img src="https://plus.unsplash.com/premium_photo-1661908377130-772731de98f6?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="" class="w-full h-full object-cover rounded-lg rounded-b-lg">
                             </div>
-                            <div class="swiper-slide">
-                                <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="" class="object-cover w-[630px] h-[554px]">
+                            <div
+                                class="swiper-slide w-[630px] h-[554px] object-cover flex z-[-3] rounded-lg justify-center">
+                                <img src="https://images.unsplash.com/photo-1434082033009-b81d41d32e1c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvdXNlfGVufDB8fDB8fHww"
+                                    alt="" class="w-full h-full object-cover rounded-lg">
                             </div>
-                            <div class="swiper-slide">
-                                <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="" class="object-cover w-[630px] h-[554px]">
+                            <div
+                                class="swiper-slide w-[630px] h-[554px] object-cover flex z-[-3] rounded-lg justify-center">
+                                <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGhvdXNlfGVufDB8fDB8fHww"
+                                    alt="" class="w-full h-full object-cover rounded-lg">
                             </div>
-                            ...
                         </div>
                         <!-- If we need pagination -->
                         <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="houses"
+            class="mt-30 flex flex-col justify-center items-center gap-11 container py-4 px-30 mx-auto">
+            <div id="heads" class="text-center">
+                <h4 class="text-[24px] text-primary font-lora font-normal">Recent</h4>
+                <h1 class="text-[40px] text-black font-lora font-medium">Newly Listed Projects</h1>
+            </div>
+            <div class="flex flex-row justify-center items-center gap-10 mt-10">
+                <div
+                    class="px-8 py-2 text-[20px] bg-white text-black duration-200 font-medium hover:bg-primary hover:text-white rounded-lg shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)]">
+                    All</div>
+                <div
+                    class="px-8 py-2 text-[20px] bg-white text-black duration-200 font-medium hover:bg-primary hover:text-white rounded-lg shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)]">
+                    For Rent</div>
+                <div
+                    class="px-8 py-2 text-[20px] bg-white text-black duration-200 font-medium hover:bg-primary hover:text-white rounded-lg shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)]">
+                    For Sale</div>
+                <div
+                    class="px-8 py-2 text-[20px] bg-white text-black duration-200 font-medium hover:bg-primary hover:text-white rounded-lg shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)]">
+                    Apartment</div>
+                <div
+                    class="px-8 py-2 text-[20px] bg-white text-black duration-200 font-medium hover:bg-primary hover:text-white rounded-lg shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)]">
+                    Office</div>
+                <div
+                    class="px-8 py-2 text-[20px] bg-white text-black duration-200 font-medium hover:bg-primary hover:text-white rounded-lg shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)]">
+                    Shop</div>
+            </div>
+            <div id="products" class="flex flex-wrap flex-row gap-10">
+                <div id="product" class="rounded-lg shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)]">
+                    <div id="prod-img">
+                        <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdXNlfGVufDB8fDB8fHww"
+                            alt="" class="w-[400px] h-[300px] rounded-t-lg">
+                    </div>
+                    <div id="context" class="w-100 flex flex-col gap-4">
+                        <div id="margin-sides" class="pr-6 pl-6 flex flex-col gap-2 items-start w-100">
+                            <h1 class="mt-4 text-2xl text-black font-medium">Home in Merrick Way</h1>
+                            <div id="loc-added" class="flex flex-col gap-1">
+                                <div id="loc" class="text-black"><i
+                                        class="ri-map-pin-2-line text-primary text-md font-medium"></i> Merrick
+                                    Way, Miami, FL
+                                    33134, USA</div>
+                                <div id="when-added" class="text-gray-500 text-sm ">Added: March 15, 2025</div>
+                            </div>
+                            <div class="text-black font-medium">
+                                <i class="ri-hotel-bed-line text-primary text-md font-medium"></i> 3
+                                <i class="ri-heavy-showers-fill text-primary text-md font-medium"></i> 3
+                                <i class="ri-custom-size text-primary text-md font-medium"></i> 4300 sq ft
+                            </div>
+                            <div id="line" class=" w-full border border-b-gray-50/40 border-b-1"></div>
+                            <div id="user-price" class="w-88 flex flex-row justify-between items-center">
+                                <div id="user" class="flex flex-row gap-2 items-center">
+                                    <img src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="" class="w-[30px] h-[30px] rounded-full">
+                                    <h3>Melissa White</h3>
+                                </div>
+                                <div id="price" class="text-primary text-md font-medium text-2xl">$540,000</div>
+                            </div>
+                        </div>
+                        <div id="srcs" class="flex flex-row justify-between w-88">
+                            <div id="each-src"
+                                class="px-[11px] rounded-bl-lg py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                <i class="ri-heart-fill text-primary"></i> Favorites
+                            </div>
+                            <div id="each-src"
+                                class="px-[11px] py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                <i class="ri-arrow-left-right-line text-primary"></i> Compare
+                            </div>
+                            <div id="each-src"
+                                class="px-[11px] py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                <i class="ri-image-line text-primary"></i> Images
+                            </div>
+                            <div id="each-src"
+                                class="px-[11px] rounded-br-lg py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                <i class="ri-video-on-fill text-primary"></i> Videos
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="product" class="rounded-lg shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)]">
+                    <div id="prod-img">
+                        <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdXNlfGVufDB8fDB8fHww"
+                            alt="" class="w-[400px] h-[300px] rounded-t-lg">
+                    </div>
+                    <div id="context" class="w-100 flex flex-col gap-4">
+                        <div id="margin-sides" class="pr-6 pl-6 flex flex-col gap-2 items-start w-100">
+                            <h1 class="mt-4 text-2xl text-black font-medium">Home in Merrick Way</h1>
+                            <div id="loc-added" class="flex flex-col gap-1">
+                                <div id="loc" class="text-black"><i
+                                        class="ri-map-pin-2-line text-primary text-md font-medium"></i> Merrick
+                                    Way, Miami, FL
+                                    33134, USA</div>
+                                <div id="when-added" class="text-gray-500 text-sm ">Added: March 15, 2025</div>
+                            </div>
+                            <div class="text-black font-medium">
+                                <i class="ri-hotel-bed-line text-primary text-md font-medium"></i> 3
+                                <i class="ri-heavy-showers-fill text-primary text-md font-medium"></i> 3
+                                <i class="ri-custom-size text-primary text-md font-medium"></i> 4300 sq ft
+                            </div>
+                            <div id="line" class=" w-full border border-b-gray-50/40 border-b-1"></div>
+                            <div id="user-price" class="w-88 flex flex-row justify-between items-center">
+                                <div id="user" class="flex flex-row gap-2 items-center">
+                                    <img src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="" class="w-[30px] h-[30px] rounded-full">
+                                    <h3>Melissa White</h3>
+                                </div>
+                                <div id="price" class="text-primary text-md font-medium text-2xl">$540,000</div>
+                            </div>
+                        </div>
+                        <div id="srcs" class="flex flex-row justify-between w-88">
+                            <div id="each-src"
+                                class="px-[11px] rounded-bl-lg py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                <i class="ri-heart-fill text-primary"></i> Favorites
+                            </div>
+                            <div id="each-src"
+                                class="px-[11px] py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                <i class="ri-arrow-left-right-line text-primary"></i> Compare
+                            </div>
+                            <div id="each-src"
+                                class="px-[11px] py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                <i class="ri-image-line text-primary"></i> Images
+                            </div>
+                            <div id="each-src"
+                                class="px-[11px] rounded-br-lg py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                <i class="ri-video-on-fill text-primary"></i> Videos
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="product" class="rounded-lg shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)]">
+                    <div id="prod-img">
+                        <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdXNlfGVufDB8fDB8fHww"
+                            alt="" class="w-[400px] h-[300px] rounded-t-lg">
+                    </div>
+                    <div id="context" class="w-100 flex flex-col gap-4">
+                        <div id="margin-sides" class="pr-6 pl-6 flex flex-col gap-2 items-start w-100">
+                            <h1 class="mt-4 text-2xl text-black font-medium">Home in Merrick Way</h1>
+                            <div id="loc-added" class="flex flex-col gap-1">
+                                <div id="loc" class="text-black"><i
+                                        class="ri-map-pin-2-line text-primary text-md font-medium"></i> Merrick
+                                    Way, Miami, FL
+                                    33134, USA</div>
+                                <div id="when-added" class="text-gray-500 text-sm ">Added: March 15, 2025</div>
+                            </div>
+                            <div class="text-black font-medium">
+                                <i class="ri-hotel-bed-line text-primary text-md font-medium"></i> 3
+                                <i class="ri-heavy-showers-fill text-primary text-md font-medium"></i> 3
+                                <i class="ri-custom-size text-primary text-md font-medium"></i> 4300 sq ft
+                            </div>
+                            <div id="line" class=" w-full border border-b-gray-50/40 border-b-1"></div>
+                            <div id="user-price" class="w-88 flex flex-row justify-between items-center">
+                                <div id="user" class="flex flex-row gap-2 items-center">
+                                    <img src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="" class="w-[30px] h-[30px] rounded-full">
+                                    <h3>Melissa White</h3>
+                                </div>
+                                <div id="price" class="text-primary text-md font-medium text-2xl">$540,000</div>
+                            </div>
+                        </div>
+                        <div id="srcs" class="flex flex-row justify-between w-88">
+                            <div id="each-src"
+                                class="px-[11px] rounded-bl-lg py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                <i class="ri-heart-fill text-primary"></i> Favorites
+                            </div>
+                            <div id="each-src"
+                                class="px-[11px] py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                <i class="ri-arrow-left-right-line text-primary"></i> Compare
+                            </div>
+                            <div id="each-src"
+                                class="px-[11px] py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                <i class="ri-image-line text-primary"></i> Images
+                            </div>
+                            <div id="each-src"
+                                class="px-[11px] rounded-br-lg py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                <i class="ri-video-on-fill text-primary"></i> Videos
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-60 flex flex-col gap-30">
+            <div id="line-purple" class="w-full h-[300px] py-4 bg-violet-100 flex flex-row justify-center items-center">
+                <div class="container py-7 px-50 mx-auto flex flex-col justify-center items-start">
+                    <p class="text-[30px] text-primary font-lora font-normal mb-3">Check out</p>
+                    <h1 class="text-[75px] text-black font-lora font-semibold w-50 leading-20">Featured Properties
+                    </h1>
+                </div>
+                <div id="swiper-full-news" class="flex flex-col gap-4 px-50">
+                    <div class="swiper w-[660px] h-[550px] flex z-10">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div
+                                class="swiper-slide w-[630px] h-[554px] object-cover flex z-[-3] rounded-lg justify-center">
+                                <img src="https://plus.unsplash.com/premium_photo-1661908377130-772731de98f6?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="" class="w-full h-full object-cover rounded-lg rounded-b-lg">
+                            </div>
+                            <div
+                                class="swiper-slide w-[630px] h-[554px] object-cover flex z-[-3] rounded-lg justify-center">
+                                <img src="https://images.unsplash.com/photo-1434082033009-b81d41d32e1c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvdXNlfGVufDB8fDB8fHww"
+                                    alt="" class="w-full h-full object-cover rounded-lg">
+                            </div>
+                            <div
+                                class="swiper-slide w-[630px] h-[554px] object-cover flex z-[-3] rounded-lg justify-center">
+                                <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGhvdXNlfGVufDB8fDB8fHww"
+                                    alt="" class="w-full h-full object-cover rounded-lg">
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-end mr-63">
+                <div id="margin-sides" class="pr-6 pl-6 flex flex-col gap-3 items-start w-[630px] mt-20 justify-end">
+                    <h1 class="mt-4 text-[60px] text-black font-medium">Home in Merrick Way</h1>
+                    <div id="loc-added" class="flex flex-col gap-3">
+                        <div id="when-added" class="text-gray-500 text-xl">The very best waterfront location in Harbor
+                            Islands complete with private dock and amazing water…</div>
+                    </div>
+                    <div class="text-black font-medium flex flex-row gap-2 text-xl">
+                        <i class="ri-hotel-bed-line text-primary text-xl font-medium"></i> Bedrooms 3
+                        <i class="ri-heavy-showers-fill text-primary text-xl font-medium ml-5"></i> Bathrooms 3
+                        <i class="ri-custom-size text-primary text-xl font-medium ml-5"></i> Area 4300 sq ft
+                    </div>
+                    <div id="user-price" class="w-88 flex flex-row justify-between items-center">
+                        <div id="price" class="text-primary text-[36px] font-medium text-2xl">$540,000</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="for-sale"
+            class="mt-30 flex flex-col justify-center items-center gap-11 container py-4 px-30 mx-auto">
+            <div>
+                <div id="heads" class="text-center">
+                    <h4 class="text-[24px] text-primary font-lora font-normal">Properties</h4>
+                    <h1 class="text-[40px] text-black font-lora font-medium">For Sale</h1>
+                </div>
+            </div>
+            <div>
 
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-
-                        <!-- If we need scrollbar -->
-                        <div class="swiper-scrollbar"></div>
+                <div class="grid grid-cols-4 grid-rows-2 gap-4">
+                    <div class="rounded-lg col-span-2 shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)]">
+                        <img src="https://plus.unsplash.com/premium_photo-1661883964999-c1bcb57a7357?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGhvdXNlfGVufDB8fDB8fHww"
+                            alt="" class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <div class="rounded-lg col-start-3 shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)]">
+                        <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGhvdXNlfGVufDB8fDB8fHww"
+                            alt="" class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <div class="rounded-lg col-start-4 shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)]">
+                        <img src="https://plus.unsplash.com/premium_photo-1661883982941-50af7720a6ff?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fGhvdXNlfGVufDB8fDB8fHww"
+                            alt="" class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <div class="rounded-lg row-start-2 shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)]">
+                        <img src="https://images.unsplash.com/photo-1628624747186-a941c476b7ef?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fGhvdXNlfGVufDB8fDB8fHww"
+                            alt="" class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <div class="rounded-lg row-start-2 shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)]">
+                        <img src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fGhvdXNlfGVufDB8fDB8fHww"
+                            alt="" class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <div class="rounded-lg col-span-2 row-start-2 shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)]">
+                        <img src="https://plus.unsplash.com/premium_photo-1686090448517-2f692cc45187?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzN8fGhvdXNlfGVufDB8fDB8fHww"
+                            alt="" class="w-full h-full object-cover rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="agents" class="mt-30 flex flex-col items-start justify-center gap-11 container py-4 px-30 mx-auto">
+            <div class="flex items-start justify-start">
+                <div id="heads" class="text-left">
+                    <h4 class="text-[24px] text-primary font-lora font-normal">Agents</h4>
+                    <h1 class="text-[40px] text-black font-lora font-normal">Meet Our Agents</h1>
+                </div>
+            </div>
+            <div id="agents" class="flex flex-row flex-wrap gap-12 items-center justify-center">
+                <div id="agent" class="flex flex-col items-center justify-start gap-4">
+                    <div id="image" class="w-[252px] h-[320px] rounded-lg">
+                        <img src="https://bunny-wp-pullzone-o856rmsjyp.b-cdn.net/wp-content/uploads/sites/13/2022/05/agent1.jpg"
+                            alt="" class="w-[252px] h-[320px] rounded-lg shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)]">
+                    </div>
+                    <div id="name">
+                        <h1 class="text-black text-[20px]">John Kennedy <i
+                                class="ri-checkbox-circle-fill text-blue-400"></i></h1>
                     </div>
                 </div>
             </div>
@@ -187,6 +471,13 @@
     </main>
     <footer class="container py-5 px-30 mx-auto"></footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 2000,
+            }
+        });
+    </script>
     <script src="../src/js/app.js"></script>
 </body>
 
