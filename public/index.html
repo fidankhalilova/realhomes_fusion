@@ -207,9 +207,13 @@
             </div>
             <div id="products" class="flex flex-wrap flex-row gap-10">
                 <div id="product" class="rounded-lg shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)]">
-                    <div id="prod-img">
+                    <div id="prod-img" class="overflow-hidden rounded-t-lg relative w-full">
                         <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdXNlfGVufDB8fDB8fHww"
-                            alt="" class="w-[400px] h-[300px] rounded-t-lg">
+                            alt="" class="w-[400px] h-[300px] rounded-t-lg relative duration-200 hover:scale-[1.1]">
+                        <div id="like-share" class="opacity-50 absolute top-5 px-2 hover:opacity-100 text-right">
+                            <i class="ri-star-line rounded-full bg-primary p-4 text-xl text-white"></i>
+                            <i class="ri-share-line rounded-full bg-primary p-4 text-xl text-white"></i>
+                        </div>
                     </div>
                     <div id="context" class="w-100 flex flex-col gap-4">
                         <div id="margin-sides" class="pr-6 pl-6 flex flex-col gap-2 items-start w-100">
@@ -257,9 +261,13 @@
                     </div>
                 </div>
                 <div id="product" class="rounded-lg shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)]">
-                    <div id="prod-img">
+                    <div id="prod-img" class="overflow-hidden rounded-t-lg relative w-full">
                         <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdXNlfGVufDB8fDB8fHww"
-                            alt="" class="w-[400px] h-[300px] rounded-t-lg">
+                            alt="" class="w-[400px] h-[300px] rounded-t-lg relative duration-200 hover:scale-[1.1]">
+                        <div id="like-share" class="opacity-50 absolute top-5 px-2 hover:opacity-100 text-right">
+                            <i class="ri-star-line rounded-full bg-primary p-4 text-xl text-white"></i>
+                            <i class="ri-share-line rounded-full bg-primary p-4 text-xl text-white"></i>
+                        </div>
                     </div>
                     <div id="context" class="w-100 flex flex-col gap-4">
                         <div id="margin-sides" class="pr-6 pl-6 flex flex-col gap-2 items-start w-100">
@@ -307,9 +315,13 @@
                     </div>
                 </div>
                 <div id="product" class="rounded-lg shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)]">
-                    <div id="prod-img">
+                    <div id="prod-img" class="overflow-hidden rounded-t-lg relative w-full">
                         <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdXNlfGVufDB8fDB8fHww"
-                            alt="" class="w-[400px] h-[300px] rounded-t-lg">
+                            alt="" class="w-[400px] h-[300px] rounded-t-lg relative duration-200 hover:scale-[1.1]">
+                        <div id="like-share" class="opacity-50 absolute top-5 px-2 hover:opacity-100 text-right">
+                            <i class="ri-star-line rounded-full bg-primary p-4 text-xl text-white"></i>
+                            <i class="ri-share-line rounded-full bg-primary p-4 text-xl text-white"></i>
+                        </div>
                     </div>
                     <div id="context" class="w-100 flex flex-col gap-4">
                         <div id="margin-sides" class="pr-6 pl-6 flex flex-col gap-2 items-start w-100">
@@ -421,29 +433,218 @@
             <div>
 
                 <div class="grid grid-cols-4 grid-rows-2 gap-4">
-                    <div class="rounded-lg col-span-2 shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)]">
+                    <div class="overflow-hidden rounded-lg col-span-2 shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)]">
                         <img src="https://plus.unsplash.com/premium_photo-1661883964999-c1bcb57a7357?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGhvdXNlfGVufDB8fDB8fHww"
-                            alt="" class="w-full h-full object-cover rounded-lg">
+                            alt="" class="w-full h-full object-cover rounded-lg duration-200 hover:scale-[1.1]">
                     </div>
-                    <div class="rounded-lg col-start-3 shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)]">
+                    <div
+                        class="overflow-hidden rounded-lg col-start-3 shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)] relative">
                         <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGhvdXNlfGVufDB8fDB8fHww"
-                            alt="" class="w-full h-full object-cover rounded-lg">
+                            alt=""
+                            class="w-full h-full object-cover rounded-lg duration-200 hover:scale-[1.1] relative z-1">
+
+                        <div id="context"
+                            class="w-full bg-white rounded-lg opacity-0 hover:flex hover:flex-col hover:gap-4 hover:opacity-100 absolute bottom-0 z-8 duration-200">
+                            <div id="margin-sides" class="pr-6 pl-6 flex flex-col gap-2 items-start w-100">
+                                <h1 class="mt-4 text-2xl text-black font-medium">Home in Merrick Way</h1>
+                                <div id="loc-added" class="flex flex-col gap-1">
+                                    <div id="loc" class="text-black"><i
+                                            class="ri-map-pin-2-line text-primary text-md font-medium"></i> Merrick
+                                        Way, Miami, FL
+                                        33134, USA</div>
+                                    <div id="when-added" class="text-gray-500 text-sm ">Added: March 15, 2025</div>
+                                </div>
+                                <div class="text-black font-medium">
+                                    <i class="ri-hotel-bed-line text-primary text-md font-medium"></i> 3
+                                    <i class="ri-heavy-showers-fill text-primary text-md font-medium"></i> 3
+                                    <i class="ri-custom-size text-primary text-md font-medium"></i> 4300 sq ft
+                                </div>
+                                <div id="user-price" class="w-full flex flex-row justify-start gap-6 items-center">
+                                    <div id="user" class="flex flex-row items-center">
+                                        <img src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                            alt="" class="w-[30px] h-[30px] rounded-full">
+                                        <h3>Melissa White</h3>
+                                    </div>
+                                    <div id="price" class="text-primary text-md font-medium text-2xl">$540,000</div>
+                                </div>
+                            </div>
+                            <div id="srcs" class="flex flex-row justify-between w-88">
+                                <div id="each-src"
+                                    class="px-[11px] rounded-bl-lg py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                    <i class="ri-heart-fill text-primary"></i> Favorites
+                                </div>
+                                <div id="each-src"
+                                    class="px-[11px] py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                    <i class="ri-arrow-left-right-line text-primary"></i> Compare
+                                </div>
+                                <div id="each-src"
+                                    class="px-[11px] py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                    <i class="ri-image-line text-primary"></i> Images
+                                </div>
+                                <div id="each-src"
+                                    class="px-[11px] rounded-br-lg py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                    <i class="ri-video-on-fill text-primary"></i> Videos
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="rounded-lg col-start-4 shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)]">
+                    <div
+                        class="overflow-hidden rounded-lg col-start-4 shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)] relative">
                         <img src="https://plus.unsplash.com/premium_photo-1661883982941-50af7720a6ff?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fGhvdXNlfGVufDB8fDB8fHww"
-                            alt="" class="w-full h-full object-cover rounded-lg">
+                            alt=""
+                            class="w-full h-full object-cover rounded-lg duration-200 hover:scale-[1.1] relative z-1">
+
+                        <div id="context"
+                            class="w-full bg-white rounded-lg opacity-0 hover:flex hover:flex-col hover:gap-4 hover:opacity-100 absolute bottom-0 z-8 duration-200">
+                            <div id="margin-sides" class="pr-6 pl-6 flex flex-col gap-2 items-start w-100">
+                                <h1 class="mt-4 text-2xl text-black font-medium">Home in Merrick Way</h1>
+                                <div id="loc-added" class="flex flex-col gap-1">
+                                    <div id="loc" class="text-black"><i
+                                            class="ri-map-pin-2-line text-primary text-md font-medium"></i> Merrick
+                                        Way, Miami, FL
+                                        33134, USA</div>
+                                    <div id="when-added" class="text-gray-500 text-sm ">Added: March 15, 2025</div>
+                                </div>
+                                <div class="text-black font-medium">
+                                    <i class="ri-hotel-bed-line text-primary text-md font-medium"></i> 3
+                                    <i class="ri-heavy-showers-fill text-primary text-md font-medium"></i> 3
+                                    <i class="ri-custom-size text-primary text-md font-medium"></i> 4300 sq ft
+                                </div>
+                                <div id="user-price" class="w-full flex flex-row justify-start gap-6 items-center">
+                                    <div id="user" class="flex flex-row items-center">
+                                        <img src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                            alt="" class="w-[30px] h-[30px] rounded-full">
+                                        <h3>Melissa White</h3>
+                                    </div>
+                                    <div id="price" class="text-primary text-md font-medium text-2xl">$540,000</div>
+                                </div>
+                            </div>
+                            <div id="srcs" class="flex flex-row justify-between w-88">
+                                <div id="each-src"
+                                    class="px-[11px] rounded-bl-lg py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                    <i class="ri-heart-fill text-primary"></i> Favorites
+                                </div>
+                                <div id="each-src"
+                                    class="px-[11px] py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                    <i class="ri-arrow-left-right-line text-primary"></i> Compare
+                                </div>
+                                <div id="each-src"
+                                    class="px-[11px] py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                    <i class="ri-image-line text-primary"></i> Images
+                                </div>
+                                <div id="each-src"
+                                    class="px-[11px] rounded-br-lg py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                    <i class="ri-video-on-fill text-primary"></i> Videos
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="rounded-lg row-start-2 shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)]">
+                    <div
+                        class="overflow-hidden rounded-lg row-start-2 shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)] relative">
                         <img src="https://images.unsplash.com/photo-1628624747186-a941c476b7ef?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fGhvdXNlfGVufDB8fDB8fHww"
-                            alt="" class="w-full h-full object-cover rounded-lg">
+                            alt=""
+                            class="w-full h-full object-cover rounded-lg duration-200 hover:scale-[1.1] relative z-1">
+
+                        <div id="context"
+                            class="w-full bg-white rounded-lg opacity-0 hover:flex hover:flex-col hover:gap-4 hover:opacity-100 absolute bottom-0 z-8 duration-200">
+                            <div id="margin-sides" class="pr-6 pl-6 flex flex-col gap-2 items-start w-100">
+                                <h1 class="mt-4 text-2xl text-black font-medium">Home in Merrick Way</h1>
+                                <div id="loc-added" class="flex flex-col gap-1">
+                                    <div id="loc" class="text-black"><i
+                                            class="ri-map-pin-2-line text-primary text-md font-medium"></i> Merrick
+                                        Way, Miami, FL
+                                        33134, USA</div>
+                                    <div id="when-added" class="text-gray-500 text-sm ">Added: March 15, 2025</div>
+                                </div>
+                                <div class="text-black font-medium">
+                                    <i class="ri-hotel-bed-line text-primary text-md font-medium"></i> 3
+                                    <i class="ri-heavy-showers-fill text-primary text-md font-medium"></i> 3
+                                    <i class="ri-custom-size text-primary text-md font-medium"></i> 4300 sq ft
+                                </div>
+                                <div id="user-price" class="w-full flex flex-row justify-start gap-6 items-center">
+                                    <div id="user" class="flex flex-row items-center">
+                                        <img src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                            alt="" class="w-[30px] h-[30px] rounded-full">
+                                        <h3>Melissa White</h3>
+                                    </div>
+                                    <div id="price" class="text-primary text-md font-medium text-2xl">$540,000</div>
+                                </div>
+                            </div>
+                            <div id="srcs" class="flex flex-row justify-between w-88">
+                                <div id="each-src"
+                                    class="px-[11px] rounded-bl-lg py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                    <i class="ri-heart-fill text-primary"></i> Favorites
+                                </div>
+                                <div id="each-src"
+                                    class="px-[11px] py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                    <i class="ri-arrow-left-right-line text-primary"></i> Compare
+                                </div>
+                                <div id="each-src"
+                                    class="px-[11px] py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                    <i class="ri-image-line text-primary"></i> Images
+                                </div>
+                                <div id="each-src"
+                                    class="px-[11px] rounded-br-lg py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                    <i class="ri-video-on-fill text-primary"></i> Videos
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="rounded-lg row-start-2 shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)]">
+                    <div
+                        class="overflow-hidden rounded-lg row-start-2 shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)] relative">
                         <img src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fGhvdXNlfGVufDB8fDB8fHww"
-                            alt="" class="w-full h-full object-cover rounded-lg">
+                            alt=""
+                            class="w-full h-full object-cover rounded-lg duration-200 hover:scale-[1.1] relative z-1">
+
+                        <div id="context"
+                            class="w-full bg-white rounded-lg opacity-0 hover:flex hover:flex-col hover:gap-4 hover:opacity-100 absolute bottom-0 z-8 duration-200">
+                            <div id="margin-sides" class="pr-6 pl-6 flex flex-col gap-2 items-start w-100">
+                                <h1 class="mt-4 text-2xl text-black font-medium">Home in Merrick Way</h1>
+                                <div id="loc-added" class="flex flex-col gap-1">
+                                    <div id="loc" class="text-black"><i
+                                            class="ri-map-pin-2-line text-primary text-md font-medium"></i> Merrick
+                                        Way, Miami, FL
+                                        33134, USA</div>
+                                    <div id="when-added" class="text-gray-500 text-sm ">Added: March 15, 2025</div>
+                                </div>
+                                <div class="text-black font-medium">
+                                    <i class="ri-hotel-bed-line text-primary text-md font-medium"></i> 3
+                                    <i class="ri-heavy-showers-fill text-primary text-md font-medium"></i> 3
+                                    <i class="ri-custom-size text-primary text-md font-medium"></i> 4300 sq ft
+                                </div>
+                                <div id="user-price" class="w-full flex flex-row justify-start gap-6 items-center">
+                                    <div id="user" class="flex flex-row items-center">
+                                        <img src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                            alt="" class="w-[30px] h-[30px] rounded-full">
+                                        <h3>Melissa White</h3>
+                                    </div>
+                                    <div id="price" class="text-primary text-md font-medium text-2xl">$540,000</div>
+                                </div>
+                            </div>
+                            <div id="srcs" class="flex flex-row justify-between w-88">
+                                <div id="each-src"
+                                    class="px-[11px] rounded-bl-lg py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                    <i class="ri-heart-fill text-primary"></i> Favorites
+                                </div>
+                                <div id="each-src"
+                                    class="px-[11px] py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                    <i class="ri-arrow-left-right-line text-primary"></i> Compare
+                                </div>
+                                <div id="each-src"
+                                    class="px-[11px] py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                    <i class="ri-image-line text-primary"></i> Images
+                                </div>
+                                <div id="each-src"
+                                    class="px-[11px] rounded-br-lg py-2 shadow-[0px_0px_16px_4px_rgba(0,_0,_0,_0.1)] font-medium text-[15px] flex flex-row gap-2">
+                                    <i class="ri-video-on-fill text-primary"></i> Videos
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="rounded-lg col-span-2 row-start-2 shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)]">
+                    <div
+                        class="overflow-hidden rounded-lg col-span-2 row-start-2 shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)]">
                         <img src="https://plus.unsplash.com/premium_photo-1686090448517-2f692cc45187?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzN8fGhvdXNlfGVufDB8fDB8fHww"
-                            alt="" class="w-full h-full object-cover rounded-lg">
+                            alt="" class="w-full h-full object-cover rounded-lg duration-200 hover:scale-[1.1]">
                     </div>
                 </div>
             </div>
@@ -462,7 +663,7 @@
                             alt="" class="w-[252px] h-[320px] rounded-lg shadow-[0px_0px_41px_3px_rgba(0,_0,_0,_0.1)]">
                     </div>
                     <div id="name">
-                        <h1 class="text-black text-[20px]">John Kennedy <i
+                        <h1 class="text-black font-semibold text-[20px] hover:text-primary">John Kennedy <i
                                 class="ri-checkbox-circle-fill text-blue-400"></i></h1>
                     </div>
                 </div>
@@ -470,6 +671,7 @@
         </section>
     </main>
     <footer class="container py-5 px-30 mx-auto"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module">
         const swiper = new Swiper('.swiper', {

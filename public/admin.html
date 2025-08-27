@@ -17,7 +17,7 @@
         <section id="houses" class="p-1 xs:p-8 mt-10">
             <div class="max-w-96 sm:max-w-4xl mx-auto border border-primary rounded-lg p-8">
                 <h2 class="sm:text-xl text-[12px] font-bold mb-6">New House Input</h2>
-                <form class="w-full">
+                <form class="w-full" id="products">
                     <div class="space-y-6">
                         <div>
                             <label for="title" class="text-xs xs:text-sm font-medium text-gray-700 mb-1 ">House Name<svg
@@ -67,17 +67,18 @@
                         </div>
                         <div class="grid sm:grid-cols-2 grid-cols-1 gap-6">
                             <div>
-                                <label for="area" class="text-xs xs:text-sm font-medium text-gray-700 mb-1">Price
+                                <label for="price" class="text-xs xs:text-sm font-medium text-gray-700 mb-1">Price
                                     ($)</label>
-                                <input name="area" id="area"
+                                <input name="price" id="price"
                                     class="h-[50px] rounded-[5px] text-xs xs:text-sm border border-[#D1D5DB] w-full px-2"
                                     placeholder="Enter the number">
                                 </select>
                             </div>
                             <div>
-                                <label for="area" class="text-xs xs:text-sm font-medium text-gray-700 mb-1">Your Full
+                                <label for="full-name" class="text-xs xs:text-sm font-medium text-gray-700 mb-1">Your
+                                    Full
                                     Name</label>
-                                <input name="area" id="area"
+                                <input name="full-name" id="full-name"
                                     class="h-[50px] rounded-[5px] text-xs xs:text-sm border border-[#D1D5DB] w-full px-2"
                                     placeholder="Enter the full name">
                                 </select>
@@ -94,7 +95,7 @@
         <section id="agents" class="p-1 mb-10 xs:p-8 mt-10">
             <div class="max-w-96 sm:max-w-4xl mx-auto border border-primary rounded-lg p-8">
                 <h2 class="sm:text-xl text-[12px] font-bold mb-6">New Agent Input</h2>
-                <form class="w-full">
+                <form class="w-full" id="agents">
                     <div class="flex flex-col gap-7 justify-center items-start w-full">
                         <div class="w-full flex gap-2 flex-col">
                             <label for="title" class="text-xs xs:text-sm font-medium text-gray-700 mb-1 ">Agent Name<svg
@@ -139,6 +140,10 @@
             </div>
         </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="../src/js/app.js"></script>
 </body>
 
 </html>

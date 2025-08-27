@@ -1,0 +1,54 @@
+{
+  "products": [
+    {
+      "id": "e3c6",
+      "title": "",
+      "location": "",
+      "bedroom": "",
+      "bathroom": "",
+      "area": "",
+      "price": "",
+      "full-name": ""
+    },
+    {
+      "id": "2616",
+      "title": "Fidan",
+      "location": "khalil",
+      "bedroom": "3y23",
+      "bathroom": "35235",
+      "area": "32523",
+      "price": "35123",
+      "full-name": "gsdfb"
+    },
+    {
+      "id": "2630",
+      "title": "Fidan",
+      "location": "khalil",
+      "bedroom": "3y23",
+      "bathroom": "32",
+      "area": "485o1y4t143oy",
+      "price": "8357",
+      "full-name": "fifi"
+    }
+  ],
+  "agents": [
+    {
+      "id": "4517",
+      "title": "ydwvgqyvw",
+      "category": "no",
+      "photo": "ghawrgkjgJ"
+    },
+    {
+      "id": "88c3",
+      "title": "",
+      "category": "none",
+      "photo": ""
+    },
+    {
+      "id": "3051",
+      "title": "Fidan",
+      "category": "no",
+      "photo": "34"
+    }
+  ]
+}
