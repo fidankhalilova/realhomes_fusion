@@ -62,22 +62,22 @@ const renderProductsHTML = (products) => {
                             <h1 class="mt-4 text-2xl text-black font-medium">${product?.title ?? "No Name"}</h1>
                             <div id="loc-added" class="flex flex-col gap-1">
                                 <div id="loc" class="text-black"><i
-                                        class="ri-map-pin-2-line text-primary text-md font-medium"></i> ${product?.location ?? ""}</div>
+                                        class="ri-map-pin-2-line text-primary text-md font-medium"></i> ${product?.location ?? "No Location"}</div>
                                 <div id="when-added" class="text-gray-500 text-sm ">Added: ${dateString ?? ""}</div>
                             </div>
                             <div class="text-black font-medium">
-                                <i class="ri-hotel-bed-line text-primary text-md font-medium"></i> ${product?.bedroom ?? ""}
-                                <i class="ri-heavy-showers-fill text-primary text-md font-medium"></i> ${product?.bathroom ?? ""}
-                                <i class="ri-custom-size text-primary text-md font-medium"></i> ${product?.area ?? ""}
+                                <i class="ri-hotel-bed-line text-primary text-md font-medium"></i> ${product?.bedroom ?? "?"}
+                                <i class="ri-heavy-showers-fill text-primary text-md font-medium"></i> ${product?.bathroom ?? "?"}
+                                <i class="ri-custom-size text-primary text-md font-medium"></i> ${product?.area ?? "?"}
                             </div>
                             <div id="line" class=" w-full border border-b-gray-50/40 border-b-1"></div>
                             <div id="user-price" class="w-88 flex flex-row justify-between items-center">
                                 <div id="user" class="flex flex-row gap-2 items-center">
-                                    <img src="${product?.userImg ?? "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0OEBAPDg4PDRAPDQ0NDw0PDQ8NDw8NFREWFhUSExMYHiggGBolGxMVITEhJSkrLi4uFx8zODMsNygtLjcBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAaAAEAAwEBAQAAAAAAAAAAAAAAAwQFAgEH/8QAMBABAQABAgQFAgQGAwAAAAAAAAECAxEEMUFxBRIhUYEysSJhksFCUqHR8PFygpH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A+ogAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA7mlneWOX6aDgd3Rz/AJcv01xf86AAAAAAAAAAAAAAAAAAAAAAAA608LldseYPMcbbtPW+y9oeH9c7/wBYs8Pw+OE9OfW+6eAj09HHHlJPhJsAGzjPTxvOS/DsBR1vD5fXG7X26KGphcbtlNq3UWroY5zazt+QMUSa+lcLtfi+8RgAAAAAAAAAAAAAAAAAANXgdDy4736r/SKHCafmzk6T1rYgPQAAAAAAAQcVoTPHbrOV/Zj2N+srxDT2y3nLL1+QVQAAAAAAAAAAAAAAAAAXvC8fqvaNFS8L+nLvPsugAAAAAAAAKXieP4Zfarqr4j9F7wGUAAAAAAAAAAAAAAAAAC/4Zl9U7VoMbg9Ty5y9L6VswAAAAAAAABT8Ty/DJ75LjK8Q1N8tt95j6fIKoAAAAAAAAAAAAAAAAADV4HiPPjtfqx59vdlOtLUuN3nMG6IOH18c56c+sTgAAAAAj1tXHCb34nWg54rWmGO/W+knvWNbv63rzv5pNfWud3vxPZGAAAAAAAAAAAAAAAAAAAAD3HKy7y7Ve0ePnLOfMUAG5p6mOX05S9r+ztgb/wCcnc1s5yyy/wDaDcc554487J3uzGuvqfz5fqqO0GjrcfjPTGb/AJ9FDU1Lld7d3IAAAAAAAAAAAAAAAAAAAAACbR4bPPlNp73kCF7jLeU37erT0uBwnP8AF9lnHGTlJAZGPC6l5YX52n3dzgdT2k+Y1dnoMq8Bqe0vyjy4XUn8F+Nr9my8BhZY2c5Z3mzxvXGXnJVbV4LDLlPLfyBlCxrcJnj08095+6uAAAAAAAAAAAAAAAAA9xxtu0m99nunjbdpN61eF4aYT3vWgi4fgpPXP1vt0i5I9AAAAAAAAAebKvEcHMvWbY3+lWwGFqYXG7WbX7uWzr6Ezm159KydbTuN2v8AuA4AAAAAAAAAAAABb8O0fNfNeWPLuC1wXD+Sb3nfXt+S0QAAAAAAAAAAAAAQcXoTPHbrzlTgMHKbWy+m3R4v+JaPLOdsv7qAAAAAAAAAAAEbXD6flxk/L17svg8d88e+7YgPQAAAAAAAAAAAAAAAc6mMssvKzZiamHltl5y7N2srxHHbPvICqAAAAAAAAACbhMts8e7YjBl9m1w2rM8ZZ89wSgAAAAAAAAAAAAAAAMnxC/j7ST5aernMZbejF1M7lbb1u4OQAAAAAAAAAF/wn+Pvj9noC+AAAAAAAAAAAAAAACn4p9E/54sz+9AAAAAAAH//2Q=="}"
+                                    <img src="${product?.userImg ?? "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOtu74pEiq7ofeQeTsco0migV16zZoBwSlGg&s"}"
                                         alt="" class="w-[30px] h-[30px] rounded-full">
-                                    <h3>${product?.fullName ?? ""}</h3>
+                                    <h3>${product?.fullName ?? "No Name"}</h3>
                                 </div>
-                                <div id="price" class="text-primary text-md font-medium text-2xl">$${product?.price ?? ""}</div>
+                                <div id="price" class="text-primary text-md font-medium text-2xl">$${product?.price ?? "No Price"}</div>
                             </div>
                         </div>
                         <div id="srcs" class="flex flex-row justify-between w-88">
